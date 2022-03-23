@@ -24,7 +24,7 @@ const Header = ({ setCoordinates }) => {
     <AppBar position="static">
       <Toolbar className={classes.toolbar}>
         <Typography variant="h5" className={classes.title}>
-          Conseiller de voyage
+          Weather App React
         </Typography>
 
         <Box display="flex">
