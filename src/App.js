@@ -7,6 +7,8 @@ import List from "./components/List/List";
 import Map from "./components/Map/Map";
 
 const App = () => {
+
+  // useState
   const [places, setPlaces] = useState([]);
   const [filtredPlaces, setFiltredPlaces] = useState([]);
   const [coords, setCoordinates] = useState({});
@@ -19,6 +21,7 @@ const App = () => {
 
   const [weatherData, setWeatherData] = useState([]);
 
+// UseEffect
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
       ({ coords: { latitude, longitude } }) => {
